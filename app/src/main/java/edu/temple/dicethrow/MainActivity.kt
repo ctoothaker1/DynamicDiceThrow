@@ -32,12 +32,12 @@ class MainActivity : AppCompatActivity(), ButtonFragment.ButtonInterface {
                 .add(R.id.diceContainer, DieFragment())
                 .commit()
         }
-//        else{
-//            supportFragmentManager
-//                .beginTransaction()
-//                .replace(R.id.rollContainer, ButtonFragment())
-//                .commit()
-//        }
+        else{
+            supportFragmentManager
+                .beginTransaction()
+                .add(R.id.rollContainer, ButtonFragment())
+                .commit()
+        }
     }
 
     override fun buttonClicked() {
